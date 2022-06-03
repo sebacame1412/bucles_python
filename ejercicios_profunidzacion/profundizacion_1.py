@@ -27,15 +27,29 @@ sino que va hasta el anterior.
 print('Comenzamos a ponernos serios!')
 # Empezar aquí la resolución del ejercicio
 
-# inicio = ....
-# fin = ....
+inicio = int(input("Ingrese el primer numero de la secuencia\n"))
 
-# cantidad_numeros ....
-# sumatoria ....
+fin = int(input("ingrese el ultimo numero de la secuencia\n"))
+
+cantidad_numeros = 0
+sumatoria = 0
+lista = range(inicio, fin + 1)
 
 # bucle.....
+
+for numero in lista:
+    sumatoria = numero + sumatoria
+    cantidad_numeros = cantidad_numeros + 1
+
+print("La cantidad de numeros es:", cantidad_numeros)
+
+print("La sumatoria es:", sumatoria)
 
 # Al terminar el bucle calcular el promedio como:
 # promedio = sumatoria / cantidad_numeros
 
 # Imprimir resultado en pantalla
+
+promedio = sumatoria / cantidad_numeros
+print("El promedio entre la sumatoria y la cantida de numeros es:", promedio)
+
